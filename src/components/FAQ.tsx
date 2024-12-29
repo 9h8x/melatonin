@@ -13,7 +13,7 @@ export default function FAQ() {
       <div className="w-[90vw] max-w-lg mx-auto">
         <Accordion type="single" collapsible className="w-full mb-56">
           <AccordionItem value="item-1">
-            <AccordionTrigger>¿Where can i get an invite?</AccordionTrigger>
+            <AccordionTrigger>Where can i get an invite?</AccordionTrigger>
             <AccordionContent>
               Sometimes invite waves happen for registered users, you can ask
               someone you know that already has access for an invite. After you
