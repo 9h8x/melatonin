@@ -1,0 +1,70 @@
+---
+import Safari from "@/components/ui/safari";
+import Ripple from "@/components/ui/ripple";
+import BlurFade from "@/components/ui/blur-fade";
+import { buttonVariants } from "@/components/ui/button";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import AnimatedShinyText from "@/components/ui/animated-shiny-text";
+import ImageCarousel from "@/components/ImageCarousel";
+
+import ShinyButton from "@/components/ui/shiny-button";
+---
+
+<section
+  class="relative min-h-[80vh] flex items-center justify-center overflow-hidden mt-8 md:-mt-12 lg:-mt-12"
+>
+  <div
+    class="absolute inset-0 bg-gradient-to-b from-background to-background/50 z-10"
+  >
+  </div>
+  <div
+    class="container relative z-20 mx-auto px-4 flex flex-col md:flex-row items-center justify-between"
+  >
+    <div class="text-center md:text-left lg:text-left max-w-lg">
+      <BlurFade delay={0.25} inView client:load>
+        <h1
+          class="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50"
+        >
+          Melatonin
+        </h1>
+      </BlurFade>
+      <BlurFade delay={0.5} inView client:load>
+        <p class="text-xl text-muted-foreground mb-8">
+          Private cheat with multiple games supported
+        </p>
+      </BlurFade>
+      <BlurFade delay={0.7} inView client:load>
+        <div
+          class="flex gap-4 justify-center md:justify-start lg:justify-start mb-12"
+        >
+          <a
+            href="/faq"
+            rel="noreferrer"
+            class={buttonVariants({ variant: "outline" })}
+          >
+            FAQ
+          </a>
+          <a
+            href="/pricing"
+            rel="noreferrer"
+            class={buttonVariants({ variant: "outline" })}
+          >
+            Pricing
+          </a>
+          <a
+            href="https://melatonin.win"
+            rel="noreferrer"
+            class={buttonVariants({ variant: "outline" })}
+          >
+            Forum
+          </a>
+        </div>
+      </BlurFade>
+    </div>
+    <BlurFade delay={0.5} inView client:load>
+      <div class="flex justify-center items-center w-full md:w-auto px-24">
+        <ImageCarousel client:load />
+      </div>
+    </BlurFade>
+  </div>
+</section>

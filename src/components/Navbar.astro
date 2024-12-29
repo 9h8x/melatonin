@@ -1,0 +1,41 @@
+---
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Pricing", href: "/pricing" },
+];
+
+import { buttonVariants } from "./ui/button";
+import { ThemeSwitcher } from "./ThemeSwitcher";
+---
+
+<header class="visible md:invisible lg:invisible">
+  <div class="container mx-auto px-4 py-4">
+    <nav class="flex justify-between items-center">
+      <ul class="flex space-x-5 ml-4">
+        {
+          navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div>
+        <a
+          href="https://discord.gg/fvQ5CVjcW2"
+          rel="noreferrer"
+          class={buttonVariants({ variant: "outline" })}
+        >
+          Discord
+        </a>
+        <ThemeSwitcher client:load />
+      </div>
+    </nav>
+  </div>
+</header>
