@@ -34,9 +34,9 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/faq", icon: CircleHelp, label: "FAQ" },
-    { href: "/pricing", icon: DollarSign, label: "Pricing" },
+    { href: "/melatonin", icon: HomeIcon, label: "Home" },
+    { href: "/melatonin/faq", icon: CircleHelp, label: "FAQ" },
+    { href: "/melatonin/pricing", icon: DollarSign, label: "Pricing" },
   ],
   contact: {
     social: {
